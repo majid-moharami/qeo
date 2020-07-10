@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:orientation="vertical"
+    tools:context=".controller.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#009688"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_show_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#FFC107"
+                    android:paddingRight="150dp"
+                    android:text="@string/show_buttom_text"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <Switch
+                    android:id="@+id/switch_button_next_and_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:switchPadding="20dp"
+                    android:text="@string/button_next_back_text"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/switch_button_true_and_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="73dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="25dp"
+                    android:switchPadding="20dp"
+                    android:text="@string/button_true_false_text"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/switch_button_cheat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="55dp"
+                    android:switchPadding="20dp"
+                    android:text="@string/button_cheat_text"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/switch_button_first_and_last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="80dp"
+                    android:switchPadding="20dp"
+                    android:text="دکمه اخرین سوال و اولین سوال"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_change_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#FFC107"
+                    android:paddingRight="130dp"
+                    android:text="تغییر اندازه متن ها"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RadioButton
+                        android:id="@+id/radio_14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="10dp"
+                        android:text="14 sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="10dp"
+                        android:text="18 sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_24sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="10dp"
+                        android:text="24 sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_change_background_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#FFC107"
+                    android:paddingRight="130dp"
+                    android:text="تغییر رنگ پس زمینه"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RadioButton
+                        android:id="@+id/radio_light_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="10dp"
+                        android:text="آبی روشن " />
+
+                    <RadioButton
+                        android:id="@+id/radio_light_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="10dp"
+                        android:text="قرمز روشن " />
+
+                    <RadioButton
+                        android:id="@+id/radio_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="10dp"
+                        android:text="24 sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
